@@ -1,0 +1,36 @@
+ body {
+    margin: 0; 
+    padding: 0;
+}
+
+/* Alinhamento da pagina */
+.conteiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Barra de Navegação */
+
+.navbar {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 87px;
+    background-color: green;
+    align-items: center;
+}
+
+
+/* Barra de Pesquisa */
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisa input {
+    font-size: 20px;
+    width: 733px;
+    height: 50px;
+}
