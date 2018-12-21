@@ -1,13 +1,65 @@
  body {
     margin: 0; 
     padding: 0;
+    color: white;
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+div {
+    margin: 0;
+    padding: 0;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
 /* Alinhamento da pagina */
 .conteiner {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+/* Barra superior de contato */
+.barracontato {
+    width: 100%;
+    display: flex;
+    background-color: rgb(33, 175, 151);
+    justify-content: center;
+}
+
+.barracontatoconteudo {
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+.numerocontato a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.numerocontato {
+    width: 615px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.faq {
+    align-items: center;
+    width: 615px;
+    height: 36px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.faq a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin: 5px;
 }
 
 /* Barra de Navegação */
@@ -21,6 +73,12 @@
     align-items: center;
 }
 
+.navbaralinhar {
+    width: 1230px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* Barra de Pesquisa */
 
@@ -82,4 +140,42 @@
     height: 38px;
     margin: 4px;
     
+}
+
+/* Menu Horizontal de Produtos */
+.menuhorizontalprodutos {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 3px solid #e5e5e5;
+}
+.listamenu {
+    list-style: none;
+    display: flex;
+    width: 1230px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listamenu li a {
+    margin: 27px;
+    color:#8c8c8c;
+    text-decoration: none;
+}
+
+.menuvertical {
+    display: flex;
+    align-items: center;
+}
+
+.menuvertical img {
+    width: 31px;
+    height: 31px;
+    margin-right: 7px;
+}
+
+.textomenuvertical {
+    color: rgb(38, 165, 144);
 }
