@@ -160,9 +160,24 @@ ul {
 }
 
 .listamenu li a {
-    margin: 27px;
     color:#8c8c8c;
     text-decoration: none;
+    font-size: 15px;
+}
+.listamenu li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listamenu li:hover {
+    background-color: #e5e5e5;
+    transition: all .7s ease;
+}
+
+.listamenu li a:hover {
+    color: #ffffff;
 }
 
 .menuvertical {
@@ -178,4 +193,16 @@ ul {
 
 .textomenuvertical {
     color: rgb(38, 165, 144);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 50px;
 }
+
+.menuvertical p {
+    color: black;
+    display: flex;
+    width: 127px;
+    margin-right: 5px;
+}
+
