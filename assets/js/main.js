@@ -4,7 +4,6 @@ function showSlides() {
 
     var i;  // Define Variavel I
     var slides = document.getElementsByClassName("sliders"); // Define seleciona a class das fotos e define "slides" como variavel  como array
-    console.log(slides);
     //var dots = document.getElementsByClassName("dot");  Variavel para selecionar todas as class "dot" das divs que contém indicadores da posição dos sliders como array
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -25,6 +24,22 @@ function showSlides() {
     setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 
-function trocarimagem() {
+function setaesquerda() {
+ 
+    var i;  // Define Variavel I
+    var slides = document.getElementsByClassName("sliders"); // Define seleciona a class das fotos e define "slides" como variavel  como array
+    //var dots = document.getElementsByClassName("dot");  Variavel para selecionar todas as class "dot" das divs que contém indicadores da posição dos sliders como array
+    for (i = 1; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }   // Pega o numero do array  sliders e cada vez adiciona  mais um valor a "i" e tira uma imagem da tela
     
+    slideIndex++;  // Adiciona index + 1
+
+    if (slideIndex > slides.length) { slideIndex = 1 }// se slideIndex for maior que o numero da variavel "slides" adiciona 1 a slide index    
+
+    //for (i = 0; i < dots.length; i++) {
+      //  dots[i].className = dots[i].className.replace(" active", "");
+    //}
+
+    slides[slideIndex  - 1].style.display = "block";  
 }
