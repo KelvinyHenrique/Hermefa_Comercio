@@ -88,32 +88,25 @@
     </div>
 
 <div class="conteiner">
-        <div class="conteudosprodutos">
-            <div class="produto">
+          <div class="conteudosprodutos">
+         
+        <?php 
+        $sql = "SELECT * FROM produtos ORDER BY id DESC"; 
+        $sql = $conexao->query($sql);
+        if($sql->rowCount() > 0) {
+          foreach($sql->fetchAll() as $produto):
+        ?>
+        <div class="produto">
                 <img src="assets/images/produtos/produto.png" alt="">
-                <p>ADOC ADOCYL LIQ 080ML STEVIA</p>
-                <p>CÓD.: 57484</p>
-            </div>
-
-            <div class="produto">
-                <img src="assets/images/produtos/produto.png" alt="">
-                <p>ADOC ADOCYL LIQ 080ML STEVIA</p>
-                <p>CÓD.: 57484</p>
-            </div>
-
-            <div class="produto">
-                <img src="assets/images/produtos/produto.png" alt="">
-                <p>ADOC ADOCYL LIQ 080ML STEVIA</p>
-                <p>CÓD.: 57484</p>
-            </div>
-
-            <div class="produto">
-                <img src="assets/images/produtos/produto.png" alt="">
-                <p>ADOC ADOCYL LIQ 080ML STEVIA</p>
-                <p>CÓD.: 57484</p>
-            </div>
-
+                <p><?php echo $produto['nome'];?></p>
+                <p><?php echo $produto['codigo'];?></p>
         </div>
+          <?php endforeach;
+        } else {
+          echo "Nenhum produto cadastrado";
+        } ?>
+
+      </div>
 
     </div>
 
