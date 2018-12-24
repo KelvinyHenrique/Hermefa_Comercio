@@ -244,3 +244,48 @@ ul {
     align-items: center;
     margin: 3px;
 }
+
+
+/* Css Página de admin */
+
+
+.navbarvertical {
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+}
+
+.opcoesadmin {
+    display: flex;
+    list-style: none;
+}
+
+.opcoesadmin li a {
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+    background-color: #2a9e8b;
+    border-radius: 14px;
+    color: #ffffff;
+}
+
+
+.formprodutos {
+    background-color: #2a9e8b;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+.formprodutos input {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+
+.formprodutos label {
+    color: #ffffff;
+}
