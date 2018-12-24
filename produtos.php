@@ -91,7 +91,7 @@
           <div class="conteudosprodutos">
          
         <?php 
-        $sql = "SELECT * FROM produtos ORDER BY categoria, alimento DESC"; 
+        $sql = "SELECT * FROM produtos ORDER BY id DESC"; 
         $sql = $conexao->query($sql);
         if($sql->rowCount() > 0) {
           foreach($sql->fetchAll() as $produto):
