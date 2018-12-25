@@ -1,7 +1,7 @@
 <?php 
 
 $nome = 'u804468449_root';
-$senha = '99562220khs';
+$senha = '46BsMXudARKt';
 
 try {
 $conexao = new PDO('mysql:host=sql171.main-hosting.eu;dbname=u804468449_dados', $nome, $senha);
