@@ -48,7 +48,6 @@
             
             <label>Imagem:</label>
             <input type="file" name="foto" /><br/><br/>
-            
             <label for="categoria">Categoria:</label> <br /> <br />
             <select>
                 <option value="categria">ALIMENTO</option>
