@@ -11,9 +11,8 @@
         $nomearquivo = md5(time().rand(0,1000)).'.png';
          move_uploaded_file($imagem['tmp_name'], '../../assets/images/produtos/'.$nomearquivo);
          
-         $destino = "../../assets/images/produtos/".$imagem['name'];
-         print_r ($destino);
-         $sql = "INSERT INTO `produtos`( `nome`, `descricao`, `codigo`, 'imagem') VALUES ('$produto', '$descricao', '$codigo', '$destino')";
+         $destino = "../../assets/images/produtos/".$nomearquivo;
+         $sql = "INSERT INTO `produtos`( `nome`, `descricao`, `codigo`, `imagem`) VALUES ('$produto', '$descricao', '$codigo', '$destino')";
          $sql = $conexao->query($sql);
          echo "Arquivo enviado com sucesso";
       } 

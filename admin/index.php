@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+
+<?php
+
+session_start();
+
+if(isset($_SESSION['id']) && !empty($_SESSION['id'])) {
+    header("Location: ../index.php");
+} else {
+    header("Location: ../login/index.php");
+}
+
+
+?>
+
 <html>
 <head>
     <meta charset="utf-8" />
@@ -9,7 +23,7 @@
     <script src="../assets/js/main.js"></script>
 </head>
 <body>
-    <div class="conteiner">
+    <div class="alinhamento">
             <div class="navbar">
             <div class="navbaralinhar">
         <div class="logo"><img src="../assets/images/logo.png" alt=""></div>

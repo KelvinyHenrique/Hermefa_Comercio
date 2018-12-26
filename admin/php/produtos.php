@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Catálogo | Hermefa Logistica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
-  <script src="assets/js/main.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/main.css" />
+  <script src="../../assets/js/main.js"></script>
 </head>
 
 <body>
@@ -35,13 +35,13 @@
   <div class="conteiner">
     <div class="navbar">
       <div class="navbaralinhar">
-        <div class="logo"><img src="assets/images/logo.png" alt=""></div>
+        <div class="logo"><img src="../../assets/images/logo.png" alt=""></div>
         <div class="pesquisa">
           <input type="text" placeholder="O que você deseja buscar?">
         </div>
 
         <div class="login">
-          <div class="loginimagem"><img src="assets/images/imglogin.png" alt=""></div>
+          <div class="loginimagem"><img src="../../assets/images/imglogin.png" alt=""></div>
           <div class="loginlink"><a href="">Olá, faça seu login<br /> ou cadastre-se</a></div>
         </div>
       </div>
@@ -55,7 +55,7 @@
       <ul class="listamenu">
         <li>
           <div class="menuvertical">
-            <img src="assets/images/menu_options.png" alt="">
+            <img src="../../assets/images/menu_options.png" alt="">
             <p>Veja as Categorias</p>
           </div>
         </li>
@@ -75,7 +75,7 @@
 
 
   <!-- Teste de conexão -->
-  <?php require 'assets/php/config.php'?>
+  <?php require '../../assets/php/config.php'?>
 
 
 
@@ -97,7 +97,7 @@
           foreach($sql->fetchAll() as $produto):
         ?>
         <div class="produto">
-                <img src="assets/images/produtos/produto.png" alt="">
+                <img src="<?php echo $produto['imagem'];?>">
                 <p><?php echo $produto['nome'];?></p>
                 <p><?php echo $produto['codigo'];?></p>
         </div>
