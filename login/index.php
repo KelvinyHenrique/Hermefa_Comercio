@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-BR" >
+
 
 <?php
 
 session_start();
 
 if(isset($_SESSION['id']) && !empty($_SESSION['id'])) {
-    header("Location: ../../admin/index.php");
-
-
-  
-    
-    } 
-
+  header("Location: ../admin/index.php");
+}
 
 ?>
+
 
 <head>
   <meta charset="UTF-8">
@@ -82,13 +79,13 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id'])) {
         <div id="login">   
           <h1>Bem Vindo de Volta</h1>
           
-          <form action="../assets/php/login.php" method="POST">
+          <form method="POST" action="../assets/php/login.php">
           
             <div class="field-wrap">
             <label>
               Email<span class="req">*</span>
             </label>
-            <input type="email" name="nome" required autocomplete="off"/>
+            <input type="email" name="email" required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
@@ -100,8 +97,9 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id'])) {
           
           <p class="forgot"><a href="#">Esqueceu a senha?</a></p>
           
-          <button class="button button-block"/>Login</button>
-          
+          <input type="submit" value="Enviar">
+         <!-- <button class="button button-block"/>Login</button>
+          -->
           </form>
 
         </div>

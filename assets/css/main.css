@@ -217,6 +217,10 @@ ul {
 
 /* Css Produtos */
 
+.produto img {
+    width: 200px;
+    height: 150px;
+}
 
 .categorianome {
     color: #717171;
@@ -291,3 +295,25 @@ ul {
 }
 
 /* Login */
+
+
+/* Slider 2 */
+
+.slider2  {
+    background-color: #8c8c8c;
+    width: 100%;
+    height: 160px;
+}
+
+.bannerbody div a img {
+        width: 380px;
+        height: 180px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+}
+.bannerbody {
+    width: 1230px;
+    display: flex;
+    justify-content: center;
+}

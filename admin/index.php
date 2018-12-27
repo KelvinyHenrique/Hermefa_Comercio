@@ -5,11 +5,9 @@
 session_start();
 
 if(isset($_SESSION['id']) && !empty($_SESSION['id'])) {
-    header("Location: ../index.php");
 } else {
     header("Location: ../login/index.php");
 }
-
 
 ?>
 
@@ -29,7 +27,7 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id'])) {
         <div class="logo"><img src="../assets/images/logo.png" alt=""></div>
         <div class="menuadmin">
         <ul class="opcoesadmin">
-                <li> <a href="">Produtos</a> </li>
+                <li> <a href="php/adicionarprodutos.php">Produtos</a> </li>
                 <li> <a href="">Email</a> </li>
                 <li> <a href="">Editar Site</a> </li>
                 <li> <a href="">Trocar Fotos</a> </li>
@@ -38,7 +36,7 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id'])) {
 
         <div class="login">
           <div class="loginimagem"><img src="../assets/images/imglogin.png" alt=""></div>
-          <div class="loginlink"><a href="">Olá, faça seu login<br /> ou cadastre-se</a></div>
+          <div class="loginlink"><a href="">Olá, <?php require '../assets/php/config.php'; echo $dado['nome'];?><br /> Seja bem vindo</a></div>
         </div>
       </div>
     </div>

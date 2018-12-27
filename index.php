@@ -94,9 +94,26 @@
     </div>
   </div>
 
+<!-- Imagens deslizantes em baixo do slider -->
+
   <div class="conteiner">
-    
+    <div class="slider2">
+    </div>
   </div>
+
+
+  <div class="conteiner">
+    <div class="bannerbody">
+       <div><a href=""><img src="assets/images/banner1.jpg" alt=""></a></div>
+       <div><a href=""><img src="assets/images/banner2.jpg" alt=""></a></div>
+       <div><a href=""><img src="assets/images/banner3.jpg" alt=""></a></div>
+    </div>
+   
+
+
+  </div>
+
+
 
 </body>
 

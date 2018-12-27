@@ -49,11 +49,11 @@
             <label>Imagem:</label>
             <input type="file" name="foto" /><br/><br/>
             <label for="categoria">Categoria:</label> <br /> <br />
-            <select>
-                <option value="categria">ALIMENTO</option>
-                <option value="categria">CUTELARIA</option>
-                <option value="categria">PAPEL</option>
-                <option value="categria">LIMPEZA</option>
+            <select name="categoria">
+                <option value="alimento">ALIMENTO</option>
+                <option value="cutelaria">CUTELARIA</option>
+                <option value="papel">PAPEL</option>
+                <option value="limpeza">LIMPEZA</option>
             </select><br /><br />
             <input type="submit" name="enviar" value="Enviar">
         
