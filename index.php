@@ -42,7 +42,7 @@
 
         <div class="login">
           <div class="loginimagem"><img src="assets/images/imglogin.png" alt=""></div>
-          <div class="loginlink"><a href="assets/php/login.php">Olá, faça seu login<br /> ou cadastre-se</a></div>
+          <div class="loginlink"><a href="login/">Olá, faça seu login<br /> ou cadastre-se</a></div>
         </div>
       </div>
     </div>
@@ -90,29 +90,88 @@
       <div class="sliders fade">
         <img src="assets/images/slider4.png">
       </div>
-     
+
     </div>
   </div>
 
-<!-- Imagens deslizantes em baixo do slider -->
+  <!-- Imagens deslizantes em baixo do slider -->
 
   <div class="conteiner">
-    <div class="slider2">
+    <div class="slider2"><img src="assets/images/2card.jpg" alt="">
     </div>
   </div>
 
 
   <div class="conteiner">
     <div class="bannerbody">
-       <div><a href=""><img src="assets/images/banner1.jpg" alt=""></a></div>
-       <div><a href=""><img src="assets/images/banner2.jpg" alt=""></a></div>
-       <div><a href=""><img src="assets/images/banner3.jpg" alt=""></a></div>
+      <div><a href=""><img src="assets/images/banner1.jpg" alt=""></a></div>
+      <div><a href=""><img src="assets/images/banner2.jpg" alt=""></a></div>
+      <div><a href=""><img src="assets/images/banner3.jpg" alt=""></a></div>
     </div>
-   
-
-
   </div>
 
+  <div class="conteiner">
+    <div class="produtosDestaquetitulo">
+      <div>
+        <h1><span>Produtos em Destaque</span></h1>
+      </div>
+      <div class="linhahorizontal"></div>
+
+    </div>
+  </div>
+  <div class="conteiner">
+    <div class="conteudosprodutos">
+
+      <?php 
+      require "assets/php/config.php";
+      $sql = "SELECT * FROM produtos ORDER BY id DESC"; 
+      $sql = $conexao->query($sql);
+      if($sql->rowCount() > 0) {
+        foreach($sql->fetchAll() as $produto):
+      ?>
+      <div class="produto">
+        <img src="<?php echo $produto['imagem'];?>">
+        <p>
+          <?php echo $produto['nome'];?>
+        </p>
+        <p>
+          <?php echo $produto['codigo'];?>
+        </p>
+      </div>
+      <?php endforeach;
+      } else {
+        echo "Nenhum produto cadastrado";
+      } ?>
+
+    </div>
+  </div>
+
+  <div class="conteiner">
+      <div class="bannercloseup"><img src="assets/images/bannercloseup.png" alt=""></div>
+  </div>
+
+
+      <div class="conteiner">
+          <div class="bannerdove">
+      <div class="banner1direita"><img src="assets/images/Dove656.png" alt=""></div>
+      <div class="bannerdir">
+        <img src="assets/images/Colgate.png" alt="">
+        <img src="assets/images/Mundial33.png" alt="">
+      </div>
+     
+        </div>
+     
+      </div>
+
+      <div class="conteiner">
+    <div class="produtosDestaquetitulo">
+      <div>
+        <h1><span>Outros Destaques</span></h1>
+      </div>
+      <div class="linhahorizontal"></div>
+
+    </div>
+  </div>
 
 
 </body>

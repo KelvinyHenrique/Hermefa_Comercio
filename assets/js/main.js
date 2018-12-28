@@ -47,7 +47,7 @@ function setaesquerda() {
 
 // Tela Login
 
-$('.form').find('input, textarea').on('keyup blur focus', function (e) {
+/*$('.form').find('input, textarea').on('keyup blur focus', function (e) {
   
     var $this = $(this),
         label = $this.prev('label');
@@ -90,3 +90,4 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
     $(target).fadeIn(600);
     
   });
+  */

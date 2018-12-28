@@ -1,7 +1,7 @@
  body {
     margin: 0; 
     padding: 0;
-    color: black;
+    color: #777;
     font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 15px;
 }
@@ -299,10 +299,8 @@ ul {
 
 /* Slider 2 */
 
-.slider2  {
-    background-color: #8c8c8c;
+.slider2  img{
     width: 100%;
-    height: 160px;
 }
 
 .bannerbody div a img {
@@ -316,4 +314,53 @@ ul {
     width: 1230px;
     display: flex;
     justify-content: center;
+}
+
+/* Produtos em Destaque */
+
+
+.produtosDestaquetitulo {
+    width: 1230px; 
+    justify-content: space-between;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.linhahorizontal {
+    border-bottom: 2px solid #666;
+    width: 70%;
+}
+
+.bannercloseup img{
+    width: 100%;
+    height: 475px;
+}
+.banner1direita {
+    width: 50%;
+}
+
+.banner1direita img{
+    width: 100%;
+    height: 100%;
+}
+
+.bannerdove {
+    width: 1230px;
+    height: 542px;
+    display: flex;
+}
+
+.bannerdir {
+    width: 50%;
+    height: 542px;
+}
+
+.bannerdir img {
+    height: 50%;
+    width: 100%;
 }

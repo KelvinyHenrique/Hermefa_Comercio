@@ -49,7 +49,7 @@
             <label>Imagem:</label>
             <input type="file" name="foto" /><br/><br/>
             <label for="categoria">Categoria:</label> <br /> <br />
-            <select name="categoria">
+            <select name="categoria[]">
                 <option value="alimento">ALIMENTO</option>
                 <option value="cutelaria">CUTELARIA</option>
                 <option value="papel">PAPEL</option>
