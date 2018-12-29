@@ -1,3 +1,8 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ 
  body {
     margin: 0; 
     padding: 0;
@@ -219,10 +224,11 @@ ul {
 
 .produto img {
     width: 200px;
-    height: 150px;
+    height: 220px;
 }
 
 .categorianome {
+    
     color: #717171;
     width: 1000px;
     display: flex;
@@ -336,17 +342,20 @@ ul {
     width: 70%;
 }
 
-.bannercloseup img{
+.bannercloseup {
+    background-image: url('../images/bannercloseup.png');
+    background-size: 100%;
     width: 100%;
-    height: 475px;
+    height: 468px;
 }
 .banner1direita {
-    width: 50%;
+    width: 48%;
 }
 
 .banner1direita img{
-    width: 100%;
+    width: 98%;
     height: 100%;
+    margin: 5px;
 }
 
 .bannerdove {
@@ -361,6 +370,103 @@ ul {
 }
 
 .bannerdir img {
-    height: 50%;
+    height: 48%;
     width: 100%;
+    margin: 5px;
 }
+
+/* Rodapé */
+
+.contentrodape {
+     width: 1230px;
+     border-bottom: 2px solid #19af96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1rodape img {
+    width: 215px;
+    height: 58px;
+}
+
+.item1rodape,
+.item2rodape,
+.item3rodape,
+.item4rodape,
+a{
+    color:#ffffff;
+    text-decoration: none;
+    
+}
+
+.item1rodape {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.contentfooterdir {
+    width: 60%;
+    display: flex;
+}
+
+
+.item2rodape,
+.item3rodape,
+.item4rodape,
+.item5rodape {
+    color: hsl(86, 74%, 57%);
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 25%;
+    align-items: center;
+    height: 200px;
+    
+}
+.item1rodape h5 {
+    font-size: 17px;
+    padding-bottom: 19px;
+}
+
+.item1rodape button {
+    width: 125px;
+    height: 36px;
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: white;
+    margin-top: 3px;
+}
+
+
+.rodape {
+    background-color: #2a9e8b;
+    width: 100%;
+    height: 283px;
+    display: flex;
+    justify-content: center;
+}
+
+.item1rodape img {
+    margin-bottom: 10px;
+}
+
+.item1rodape h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.item2rodape,
+.item3rodape,
+.item4rodape,
+.item5rodape h4 {
+    margin-bottom: 5px;
+}
+
+
