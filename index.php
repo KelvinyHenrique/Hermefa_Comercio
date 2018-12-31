@@ -54,10 +54,12 @@
     <div class="menuhorizontalprodutos">
       <ul class="listamenu">
         <li>
-          <div class="menuvertical">
+         <a href="produtos.php"> <div class="menuvertical">
             <img src="assets/images/menu_options.png" alt="">
-            <p>Veja as Categorias</p>
-          </div>
+            <p>Todas Categorias</p>
+          </div></a>
+            
+
         </li>
         <li><a href="">Alimento</a></li>
         <li><a href="">Bazar</a></li>
